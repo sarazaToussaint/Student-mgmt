@@ -4,4 +4,8 @@ class StudentController < ApplicationController
     @students = Student.all
   end
 
+  def new
+    @student = Student.new
+  end
+
 end
