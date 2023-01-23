@@ -16,5 +16,4 @@ class StudentController < ApplicationController
     )
     @student.save
   end
-
 end
