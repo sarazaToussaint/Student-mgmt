@@ -1,1 +1,1 @@
-# Students Managment Site
+# Students Managment
