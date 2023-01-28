@@ -1,1 +1,1 @@
-# Students Managment System
+# Students Managment
