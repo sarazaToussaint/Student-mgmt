@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   # get 'student/new'
 
   root 'welcome#index'
-  resources :students
+
+  resources :students, only: [:index, :new, :show]
 
 end
