@@ -6,6 +6,6 @@ Rails.application.routes.draw do
 
   root 'student#new'
 
-  resources :students
+  resources :student
 
 end
