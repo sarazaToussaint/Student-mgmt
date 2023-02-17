@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   # get 'student/index'
   # get 'student/new'
 
-  root 'students#new'
+  root 'student#new'
 
   resources :students
 
