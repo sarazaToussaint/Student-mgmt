@@ -3,13 +3,12 @@ Rails.application.routes.draw do
   # get 'welcome/index'
   # get 'student/index'
   # get 'student/new'
-  get '/students/index', to: 'students#index'
-  get '/student/new', to: 'student#new'
+  # get '/students/index', to: 'students#index'
+  # get '/students/new', to: 'students#new'
 
 
-  root 'student#new'
+  root 'students#new'
 
-  # resources :students, only: [:index, :new] do 
-  # end
+  # resource :students, only: [:index, :new]
 
 end
