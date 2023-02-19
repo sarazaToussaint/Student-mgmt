@@ -1,8 +1,8 @@
-Student.create(
-  first_name: 'John',
-  last_name: 'Doe',
-  email: 'johndoe@gmail.com'
-)
+# Student.create(
+#   first_name: 'John',
+#   last_name: 'Doe',
+#   email: 'johndoe@gmail.com'
+# )
 
 20.times do |i|
   puts "Creating Student #{i+1}"
