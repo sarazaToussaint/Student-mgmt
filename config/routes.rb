@@ -7,8 +7,10 @@ Rails.application.routes.draw do
   # get '/students/new', to: 'students#new'
 
 
-  root 'welcome#index'
+  root "students#new"
+  get "/students", to: "students#new"
 
-  resource :students, only: [:index, :new]
+
+  # resources :students
 
 end
