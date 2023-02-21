@@ -56,7 +56,6 @@ class CoursesController < ApplicationController
       @course = Course.find(params[:id])
     end
 
-    # Only allow a list of trusted parameters through.
     def course_params
       params.require(:course).permit(:name, :description)
     end
