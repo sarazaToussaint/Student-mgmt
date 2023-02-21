@@ -1,2 +1,2 @@
-class Course < ApplicationRecor
+class Course < ApplicationRecord
 end
