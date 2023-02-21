@@ -1,5 +1,5 @@
 class StudentsController < ApplicationController
-  before_action :set_student,only: %i[show edit update]
+  before_action :set_student,only: %i[ show edit update destroy ]
 
   def index
     @students = Student.all
@@ -33,7 +33,6 @@ class StudentsController < ApplicationController
   end
   
   def destroy
-    @student = Student.find(params[:id])
     @student.destroy
     redirect_to students_path, notice: 'Student has been deleted successfully'
   end
