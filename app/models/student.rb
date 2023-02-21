@@ -4,6 +4,6 @@ class Student < ApplicationRecord
   before_create :display_greetings
 
   def display_greetings
-    put "Hello the Ruby on Rails community"
+    puts "Hello the Ruby on Rails community"
   end
 end
