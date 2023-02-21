@@ -16,7 +16,7 @@ class CoursesController < ApplicationController
   end
 
   def create
-    @course = Course.new(course_param)
+    @course = Course.new(course_params)
 
     respond_to do |format|
       if @course.save
