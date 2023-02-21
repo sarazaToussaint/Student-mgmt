@@ -15,7 +15,6 @@ class CoursesController < ApplicationController
   def edit
   end
 
-  # POST /courses or /courses.json
   def create
     @course = Course.new(course_params)
 
