@@ -41,7 +41,6 @@ class CoursesController < ApplicationController
     end
   end
 
-  # DELETE /courses/1 or /courses/1.json
   def destroy
     @course.destroy
 
