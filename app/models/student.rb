@@ -3,7 +3,7 @@ class Student < ApplicationRecord
 
   before_create :display_greetings
 
-  def 
+  def display_greetings
     puts "Hello the Ruby on Rails community"
   end
 end
