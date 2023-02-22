@@ -34,7 +34,7 @@ class StudentsController < ApplicationController
   
   def destroy
     @student.destroy
-    redirect_to students_path, notice: 'Student has been deleted successfully'
+    redirect_to students_path, notice: "Student has been deleted successfully"
   end
 
   private
