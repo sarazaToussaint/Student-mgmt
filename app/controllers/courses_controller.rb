@@ -37,7 +37,7 @@ class CoursesController < ApplicationController
 
   def update
     if @course.update(course_params)
-      redirect_to course_path(@course)
+      redirect_to course_path(@course), notice: "Course was successfully updated"
     else
       render :new
     end
