@@ -21,7 +21,7 @@ class CoursesController < ApplicationController
     if @course.save 
       redirect_to courses_path
     else
-      render: new
+      render :new
     end
 
     # respond_to do |format|
