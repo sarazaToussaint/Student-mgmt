@@ -2,7 +2,7 @@ class CoursesController < ApplicationController
   before_action :set_course, only: %i[ show edit update destroy ]
 
   def index
-    @courses = Course.all
+    @courses = Course.find_each
   end
 
   def show
