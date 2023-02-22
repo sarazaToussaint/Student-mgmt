@@ -26,7 +26,7 @@ class StudentsController < ApplicationController
 
   def update
     if @student.update(student_params)
-      redirect_to student_path(@student), notice: 'Student has been updated successfully'
+      redirect_to student_path(@student), notice: "Student has been updated successfully"
     else
       render :new
     end
