@@ -42,10 +42,6 @@ class CoursesController < ApplicationController
       render :new
     end
 
-
-
-
-
     # respond_to do |format|
     #   if @course.update(course_params)
     #     format.html { redirect_to course_url(@course), notice: "Course was successfully updated." }
