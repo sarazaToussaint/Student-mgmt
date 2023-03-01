@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_01_140641) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_01_144636) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -28,8 +28,9 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_01_140641) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.date "date_of_birth"
-    t.string "address"
     t.string "contact"
+    t.string "local_address"
+    t.string "permanent_address"
   end
 
 end
