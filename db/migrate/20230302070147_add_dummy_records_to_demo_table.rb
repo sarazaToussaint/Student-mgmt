@@ -14,7 +14,7 @@ class AddDummyRecordsToDemoTable < ActiveRecord::Migration[7.0]
       dir.down do
         10.times do |i|
           puts "Deleting Demo #{i+1}"
-          Demo.find_by(name: "Demo Name #{i+1}").destroy
+          Demo.find_by(name: "Demo Name #{i+1}")
         end
       end
     end
