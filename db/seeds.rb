@@ -13,3 +13,12 @@
     email: "Student#{i+1}@bootcamp.com"
   )    
 end
+
+Student.all.each do |student|
+  student.blogs.create(
+    title: "Dummy Blog for Student #{student.id}", 
+    content: "Custom content pending")
+    student.blogs.create(
+      title: "Dummy Blog for Student #{student.id}", 
+      content: "Custom content pending")
+end
