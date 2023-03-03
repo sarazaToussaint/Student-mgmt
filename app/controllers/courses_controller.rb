@@ -19,7 +19,7 @@ class CoursesController < ApplicationController
   def edit
   end
 
-  # POST /courses or /courses.json
+  # POST /courses
   def create
     @course = Course.new(course_params)
 
