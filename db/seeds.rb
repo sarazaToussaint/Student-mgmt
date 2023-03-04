@@ -9,7 +9,7 @@
   )    
 end
 
-Student.all.each do |students|
+Student.all.each do |student|
   student.blogs.create(
     title: "Dummy Blog for Student #{student.id}", 
     content: "Custom content pending")
