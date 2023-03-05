@@ -27,6 +27,9 @@ gem "stimulus-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+#This gem allows resetting the id of an AR table to 0. It is useful after a delete_all command. It works in Postgres, Sqlite and MySQL up to now.
+gem 'activerecord-reset-pk-sequence'
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
