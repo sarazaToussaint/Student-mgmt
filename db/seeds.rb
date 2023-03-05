@@ -17,3 +17,11 @@ Student.all.each do |student|
       title: "Dummy Blog for Student #{student.id}", 
       content: "Custom content pending")
 end
+
+
+Course.create(name: "Ruby on Rails Bootcamp", description: "Pending")
+Course.create(name: "ReactJs Bootcamp", description: "Pending")
+Course.create(name: "Angular Bootcamp", description: "Pending")
+Course.create(name: "NodeJS Bootcamp", description: "Pending")
+Course.create(name: "Java Bootcamp", description: "Pending")
+Course.create(name: "Python Bootcamp", description: "Pending")
