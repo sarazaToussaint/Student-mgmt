@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_05_130702) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_05_135456) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -70,6 +70,15 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_05_130702) do
     t.string "permanent_address"
   end
 
+  create_table "sub_demos", force: :cascade do |t|
+    t.string "title"
+    t.bigint "demo_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["demo_id"], name: "index_sub_demos_on_demo_id"
+  end
+
   add_foreign_key "student_projects", "projects"
   add_foreign_key "student_projects", "students"
+  add_foreign_key "sub_demos", "demos"
 end
