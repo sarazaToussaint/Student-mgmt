@@ -10,7 +10,7 @@ class Student < ApplicationRecord
   validates :first_name, :last_name, format: { with: /\A[a-zA-Z]+\z/, 
     message: "Only letters are allowed" }
 
-    validate :validate_student_age
+  validate :validate_student_age
 
   after_save :display_student_age
 
