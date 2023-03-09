@@ -10,6 +10,8 @@ class Student < ApplicationRecord
   validates :first_name, :last_name, format: { with: /\A[a-zA-Z]+\z/, 
     message: "Only letters are allowed" }
 
+    validate :validate_student_age
+
   after_save :display_student_age
 
   def display_student_age
@@ -19,6 +21,15 @@ class Student < ApplicationRecord
    else
     puts "========Age can not be calculated without date_of_birth=========="
   end 
+  end
+
+  def validate_student_age
+    if self.date_of_birth.present?
+      age = Date.today.year - self.date_of_birth.year
+      if age < 15
+        errors.add(:age, 'Please provide a date of birth here. Age must be greater than 15')
+      end
+    end
   end
   
 end
