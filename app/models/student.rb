@@ -6,7 +6,7 @@ class Student < ApplicationRecord
 
   validates :first_name, :last_name, :email, presence: true
 
-  after_create :display_student_age
+  after_update :display_student_age
 
   def display_student_age
    if self.date_of_birth.present?
