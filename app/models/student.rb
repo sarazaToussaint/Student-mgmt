@@ -6,9 +6,15 @@ class Student < ApplicationRecord
 
   validates :first_name, :last_name, :email, presence: true
 
-  # before_create :display_greetings
+  after_create :display_student_age
 
-  # def display_greetings
-  #   puts "Hello the Ruby on Rails community"
-  # end
+  def display_student_age
+   if date_of_birth.present?
+    age = Date.today.year - date_of_birth.year
+    puts "==========Age of the student is #{age}============="
+   else
+    puts "========Age can not be calculated without date_of_birth=========="
+  end 
+  end
+  
 end
