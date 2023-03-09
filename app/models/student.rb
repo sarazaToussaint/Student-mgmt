@@ -5,6 +5,7 @@ class Student < ApplicationRecord
   has_many :students, through: :student_projects
 
   validates :first_name, :last_name, :email, presence: true
+  validates :email, uniqueness: true 
 
   after_save :display_student_age
 
