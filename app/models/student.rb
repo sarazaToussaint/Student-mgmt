@@ -39,7 +39,7 @@ class Student < ApplicationRecord
   def age
     return nil unless date_of_birth.present?
 
-    return Date.today.year - date_of_birth.year
+    return Date.today.year - date_of_birth
       
   end
 
