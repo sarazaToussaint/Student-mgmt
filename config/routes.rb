@@ -4,6 +4,5 @@ Rails.application.routes.draw do
   resources :projects
   resources :courses
   resources :students
-  resources :blogs
 
 end
