@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-    before_action :print_display_message
+    askip_before_action :print_display_message
 
     after_action :after_display_message
     
