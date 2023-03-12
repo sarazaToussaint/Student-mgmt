@@ -5,6 +5,16 @@ Rails.application.routes.draw do
   resources :courses
   resources :students
 
+  resources :users do
+    member do
+      get :preview_profile
+    end
+
+    collection do
+      get :view_users
+    end
+  end
+
   get 'welcome/about'
   get '/about' => 'welcome#about'
 
