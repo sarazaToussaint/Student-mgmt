@@ -6,13 +6,8 @@ Rails.application.routes.draw do
   resources :students
 
   resources :users do
-    member do
-      get :preview_profile
-    end
-
-    collection do
-      get :view_users
-    end
+    get :preview_profile, on: :member
+    get :view_users, on: :collection
   end
 
   get 'welcome/about'
