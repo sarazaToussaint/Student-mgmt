@@ -13,8 +13,13 @@ Rails.application.routes.draw do
   get 'welcome/about'
   get '/about' => 'welcome#about'
 
-  namespace :admin do
+  # namespace :admin do
+  #   resources :students
+  # end
+
+  scope module: :admin do
     resources :students
   end
+
 
 end
