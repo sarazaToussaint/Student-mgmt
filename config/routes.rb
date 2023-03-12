@@ -8,12 +8,10 @@ Rails.application.routes.draw do
   resources :users do
     member do
       get :preview_profile
-      get :preview_contact
     end
 
     collection do
       get :view_users
-      get :delete_user
     end
   end
 
