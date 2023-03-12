@@ -13,4 +13,8 @@ Rails.application.routes.draw do
   get 'welcome/about'
   get '/about' => 'welcome#about'
 
+  namespace :admin do
+    resources :students
+  end
+
 end
