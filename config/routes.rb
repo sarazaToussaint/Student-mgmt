@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   #   resources :students
   # end
 
-  scope :admin do
+  scope module: :admin do
     resources :students
   end
 
