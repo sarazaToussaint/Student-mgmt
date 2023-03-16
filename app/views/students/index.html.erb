@@ -12,6 +12,10 @@
       <th>First name</th>
       <th>Last name</th>
       <th>Email</th>
+      <th>DOB</th>
+      <th>L address</th><p>Email: <%= @student.email %></p>
+      <th>P address</th>
+      <th>Contact</th>
       <th colspan="3">Actions<th>
     </tr>
   </thead>
@@ -21,6 +25,10 @@
     <td><%= student.first_name %><td>
     <td><%= student.last_name %><td>
     <td><%= student.email %><td>
+    <td><%= student.date_of_birth%>
+    <td><%= student.local_address%>
+    <td><%= student.permanent_address%>
+    <td><%= student.contact%>
     <td><%= link_to 'View', student %><td>
     <td><%= link_to 'Edit', edit_student_path(student) %></td>
     <td><%= link_to "Destroy", student, data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' } %><td>
