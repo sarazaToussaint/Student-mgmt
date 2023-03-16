@@ -25,3 +25,14 @@ Course.create(name: "Angular Bootcamp", description: "Pending")
 Course.create(name: "NodeJS Bootcamp", description: "Pending")
 Course.create(name: "Java Bootcamp", description: "Pending")
 Course.create(name: "Python Bootcamp", description: "Pending")
+
+student = Student.create(
+  first_name: "Salomon",
+  last_name: "Babalao",
+  email: "sb@gmail.com",
+  date_of_birth: "11-03-2010",
+  local_address: "Sb"
+  permanent_address: "Bs"
+  contact: "0000000000"
+
+)
