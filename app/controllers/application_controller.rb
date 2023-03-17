@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
     private
 
     def print_display_message
-      puts "I'm an Inherited before action filter"
+      puts "I'm an Inherited before action filters"
     end
 
     def after_display_message
