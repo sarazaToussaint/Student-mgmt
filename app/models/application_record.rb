@@ -1,3 +1,3 @@
 class ApplicationRecord < ActiveRecord::Base
-  primary_abstract_classs
+  primary_abstract_class
 end
