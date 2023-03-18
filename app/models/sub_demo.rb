@@ -1,3 +1,3 @@
 class SubDemo < ApplicationRecord
-  belongs_to :demos
+  belongs_to :demo
 end
