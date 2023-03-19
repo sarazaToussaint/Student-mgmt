@@ -1,6 +1,5 @@
 class WelcomeController < ApplicationController
-  def index
-    @welcoms = Welcome.all 
+  def index 
   end  
 
   def about
