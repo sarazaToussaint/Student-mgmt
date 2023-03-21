@@ -5,11 +5,7 @@
 <p>Name: <%= @student.full_name %></p>
 <p>Age: <%= @student.age %></p>
 <p>Email: <%= @student.email %></p>
-
-<% if @student.date_of_birth.present? %>
-  <p>DOB: <%= formatted_date(@student.date_of_birth) %></p>
-<% end %>
-
+<p>DOB: <%= formatted_date(@student.date_of_birth) %></p>
 <p>local Address: <%= @student.local_address %></p>
 <p>P Address: <%= @student.permanent_address %></p>
 <p>Contact: <%= @student.contact %></p>
