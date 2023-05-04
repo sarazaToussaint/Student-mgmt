@@ -26,7 +26,7 @@ class Student < ApplicationRecord
   def validate_student_age
     if self.date_of_birth.present?
       age = Date.today.year - self.date_of_birth.year
-      if age < 15
+      if age < 10
         errors.add(:age, 'Please provide a date of birth here. Age must be greater than 15')
       end
     end
