@@ -7,7 +7,7 @@ class Student < ApplicationRecord
   validates :first_name, :last_name, :email, presence: true
   validates :email, uniqueness: true 
   validates :first_name, :last_name, length: {minimum: 3, maximum: 50 }
-  validates :first_name, :last_name, format: { with: /\A[a-zA-Z]+\z/, 
+  validates :first_name, :last_name, format: { , 
     message: "Only letters are allowed" }
 
   validate :validate_student_age
