@@ -30,6 +30,7 @@ class Student < ApplicationRecord
         errors.add(:age, 'Please provide a date of birth here. Age must be greater than 15')
       end
     end
+    
   end
 
   def full_name
