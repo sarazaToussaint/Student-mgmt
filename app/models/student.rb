@@ -43,5 +43,4 @@ class Student < ApplicationRecord
     return Date.today.year - date_of_birth.year
       
   end
-
 end
