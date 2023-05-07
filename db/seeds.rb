@@ -18,7 +18,6 @@ Student.all.each do |student|
       content: "Custom content pending")
 end
 
-
 Course.create(name: "Ruby on Rails Bootcamp", description: "Pending")
 Course.create(name: "ReactJs Bootcamp", description: "Pending")
 Course.create(name: "Angular Bootcamp", description: "Pending")
