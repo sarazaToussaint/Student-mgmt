@@ -32,6 +32,6 @@ student = Student.create(
   email: "sb@gmail.com",
   date_of_birth: "11-03-2000",
   local_address: "Sb",
-  permenant_address: "BS",
+  permenant_address: "Bostone",
   contact: 0784504044
 )
