@@ -1,2 +1,2 @@
-# Students Managment Application
+# Students Managment
 
