@@ -1,5 +1,5 @@
 
-21.times do |i|
+20.times do |i|
   puts "Creating Student #{i+1}"
 
   Student.create(
