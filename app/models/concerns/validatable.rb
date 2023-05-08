@@ -3,7 +3,7 @@ module Validatable
 
   included do
     validates :name, presence: true, uniqueness: true
-    validates :description, presence: true, length: { minimum: 10, maximum: 1000}
+    validates :description, presence: true, length: { minimum: 10, maximum: 1500}
 
     scope :current_month, -> { where(:create_at: Date.today.
       beginning_of_month...Date.today.end_of_month)}
