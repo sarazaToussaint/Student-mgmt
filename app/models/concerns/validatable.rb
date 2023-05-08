@@ -8,5 +8,4 @@ module Validatable
     scope :current_month, -> { where(:create_at: Date.today.
       beginning_of_month...Date.today.end_of_month)}
   end
-    
 end
