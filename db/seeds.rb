@@ -19,7 +19,7 @@ Student.all.each do |student|
 end
 
 Course.create(name: "Ruby on Rails Bootcamp", description: "Pending")
-Course.create(name: "ReactJs Bootcamp", description: "Pending")
+Course.create(name: "React.Js Bootcamp", description: "Pending")
 Course.create(name: "Angular Bootcamp", description: "Pending")
 Course.create(name: "NodeJS Bootcamp", description: "Pending")
 Course.create(name: "Java Bootcamp", description: "Pending")
